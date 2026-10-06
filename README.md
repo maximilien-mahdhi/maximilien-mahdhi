@@ -80,15 +80,12 @@ Wavelet analysis & synthesis of **fractional Brownian motion**, with Hurst expon
 | 🖼️ **Image processing** | Deconvolution, denoising, PSF/OTF modelling, Poisson noise |
 | 🧩 **Sparsity & inverse problems** | Sparse representations, compressive sensing, regularisation |
 
-One idea ties it all together: a model compares data through a representation $\Phi$, either **designed** from wavelets or **learned** by a deep network.
-
 <p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="kernel_trick_dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="kernel_trick_light.svg">
-  <img src="kernel_trick_light.svg" width="85%" alt="Kernel trick: a red and a blue group in the data space X, mapped by Φ into a feature space H where they become linearly separable">
-</picture>
+<img src="kernel_trick.gif" width="80%" alt="Animation of the kernel trick: a red and a blue group in the data space X are mapped by Φ into a feature space H, where a line separates them">
 </p>
+<p align="center"><i>The kernel trick: a feature map Φ turns a problem that is not linearly separable into a linear one.</i></p>
+
+One idea ties it all together: a model compares data through a representation $\Phi$, either **designed** from wavelets or **learned** by a deep network.
 
 ```math
 \forall\, x, x' \in \mathcal{X}, \quad k(x, x') = \big\langle \Phi(x) \,\big|\, \Phi(x') \big\rangle, \qquad \Phi \in \left\{ \begin{array}{ll} S_J & \text{wavelet scattering (designed)} \\[2pt] f_\theta & \text{deep network (learned)} \end{array} \right\}
