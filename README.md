@@ -81,7 +81,11 @@ Wavelet analysis & synthesis of **fractional Brownian motion**, with Hurst expon
 | 🧩 **Sparsity & inverse problems** | Sparse representations, compressive sensing, regularisation |
 
 <p align="center">
-<img src="kernel_trick.gif" width="80%" alt="Animation of the kernel trick: a red and a blue group in the data space X are mapped by Φ into a feature space H, where a line separates them">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="kernel_trick_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="kernel_trick_light.png">
+  <img src="kernel_trick_light.png" width="80%" alt="Animation of the kernel trick: a red and a blue group in the data space X are mapped by Φ into a feature space H, where a line separates them">
+</picture>
 </p>
 <p align="center"><i>The kernel trick: a feature map Φ turns a problem that is not linearly separable into a linear one.</i></p>
 
